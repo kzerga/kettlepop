@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Isotope Tutorial</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+		</script>
+
+		<script type="text/javascript" src="js/isotope.js"></script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+		var $container = $('#content');
+$container.isotope({
+	filter: '*',
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+});
+
+$('.nav-links a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+
+   }
+  });
+  return false;
+});
+
+});
+		</script>
+	</head>
+
+	<body>
+
+	<div class="wired-top-nav mobify-hide">
+<a href="http://www.wired.com" class="wired-logo" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://www.wired.com/_1&quot;;return this.s_oc?this.s_oc(e):true">Wired</a>
+<h1 class="title-header"><a class="cover-link" href="#landing">Design SIP</a></h1>
+<ul class="nav-links">
+	<li><a class="section-link" href="#chapter01" data-filter="*">All</a></li>
+	<li><a class="section-link" href="#chapter02" data-filter=".desk">Desk</a></li>
+	<li><a class="section-link" href="#chapter03" data-filter=".pocket">Pocket</a></li>
+	<li><a class="section-link" href="#chapter04" data-filter=".outdoor">Outdoor</a></li>
+	<li><a class="section-link" href="#chapter05">5</a></li>
+</ul>
+</div>
+
+
+
+
+
+     <div id="overlay" class="show" style="top: 3007px;">
+     	<div id="overlay-content"></div>
+     </div>
+
+		<div id="header"></div>
+
+
+		<div id="content">
+			<div class="box desk">
+			   <img src="images/d1.jpg"><a href="#"><p class="caption">Desk Chairs</p></a>
+			</div>
+
+			<div class="box pocket">
+				<img src="images/p1.jpg"><a href="#"><p class="caption">Fetish Swatch</p></a>
+			</div>
+
+			<div class="box outdoor">
+				<img src="images/o1.jpg"><a href="#"><p class="caption">Bell Motorcycle Helmet</p></a>
+			</div>
+
+			<div class="box desk">
+				<img src="images/d2.jpg"><a href="#"><p class="caption">Pencil Sharpener</p></a>
+			</div>
+			<div class="box pocket">
+				<img src="images/p2.jpg"><a href="#"><p class="caption">Travel Speakers</p></a>
+			</div>
+			<div class="box outdoor">
+				<img src="images/o2.jpg"><a href="#"><p class="caption">Rock Climbing Helmet</p></a>
+			</div>
+
+			<div class="box desk">
+				<img src="images/d3.jpg"><a href="#"><p class="caption">Phone Apps to Organize your Desk</p></a>
+			</div>
+
+			<div class="box pocket">
+				<img src="images/p3.jpg"><a href="#"><p class="caption">Watches</p></a>
+			</div>
+
+			<div class="box outdoor">
+				<img src="images/o3.jpg"><a href="#"><p class="caption">Rock Climbing Gear</p></a>
+			</div>
+
+			<div class="box desk">
+				<img src="images/d4.jpg"><a href="#"><p class="caption">Sketch Pencil</p></a>
+			</div>
+
+			<div class="box pocket">
+				<img src="images/p4.jpg"><a href="#"><p class="caption">Lighters</p></a>
+			</div>
+
+			<div class="box outdoor">
+				<img src="images/o4.jpg"><a href="#"><p class="caption">Running Gear</p></a>
+			</div>
+
+			<div class="box desk pocket">
+				<img src="images/d5p5.jpg"><a href="#"><p class="caption">Cameras</p></a>
+			</div>
+
+
+		</div>
+	</body>
+</html>

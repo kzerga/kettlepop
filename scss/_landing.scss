@@ -1,0 +1,104 @@
+#landing-page{
+	width: 100%;
+    height: 100%;
+	background: url(http://www.wired.com/wp-content/uploads/2014/06/basejumping_1800.png) no-repeat center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    top: auto;
+    font-family:$brandon;
+}
+
+#landing-page .headline-overlay {
+background: #000;
+width: 700px;
+margin: auto;
+position: absolute;
+left: 50%;
+bottom: 0;
+margin-left: -350px;
+padding: 10px;
+z-index: 80;
+}
+
+#landing-page .headline-overlay div {
+padding: 2em 2em 3.25em;
+border: 1px solid #4a4a4a;
+}
+
+#landing-page .headline-overlay h2 {
+color: #fff;
+line-height:1.2em;
+font-size:24px!important;
+}
+
+#landing-page .headline-overlay h1 {
+color: #25b0db;
+font-size: 8.75em;
+line-height: 0.8em;
+margin-bottom: .375em;
+}
+
+
+#landing-page .headline-overlay p {
+margin: 0;
+font-family: 'Proforma', serif;
+font-size: 1em;
+text-align: left;
+margin: 0 0.5em;
+color: $white;
+font-family:$brandon;
+}
+
+#landing-page .headline-overlay i {
+font-size: 30px;
+position: absolute;
+bottom: 0;
+width:90px;
+font-family:$brandon;
+font-size:14px;
+left: 50%;
+margin-left: -39px;
+background: #fff;
+color: #000;
+padding: 6px 15px 5px;
+cursor: pointer;
+-webkit-transition: background 0.25s ease-in,padding-top 0.25s ease-out;
+-moz-transition: background 0.25s ease-in,padding-top 0.25s ease-out;
+-o-transition: background 0.25s ease-in,padding-top 0.25s ease-out;
+transition: background 0.25s ease-in,padding-top 0.25s ease-out;
+}
+
+
+
+//enter button
+[class^="icon-"]:before, [class*=" icon-"]:before {
+font-family: $brandon;
+font-style: normal;
+font-weight: normal;
+speak: none;
+display: inline-block;
+text-decoration: inherit;
+width: 1em;
+margin-right: .2em;
+text-align: center;
+font-variant: normal;
+text-transform: none;
+line-height: 1em;
+margin-left: .2em;
+}
+
+
+
+figure{
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+	margin:0;
+	display:block;
+
+}
